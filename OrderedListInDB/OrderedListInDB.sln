@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderedListInDB", "OrderedListInDB\OrderedListInDB.csproj", "{4F7B55BC-5F52-47BD-809A-4EF2EADC2436}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderedListInDB.Tests", "OrderedListInDB.Tests\OrderedListInDB.Tests.csproj", "{C20CE5B7-958A-4113-AB85-62D68F26142C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7DE0BFAD-0AA0-40DF-8000-933BC0DC0893}"
+	ProjectSection(SolutionItems) = preProject
+		Performance1.psess = Performance1.psess
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsoleApp", "TestConsoleApp\TestConsoleApp.csproj", "{DB5BAFE4-0C0C-44CB-914B-4D6B82193A0E}"
+EndProject
+Global
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F7B55BC-5F52-47BD-809A-4EF2EADC2436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F7B55BC-5F52-47BD-809A-4EF2EADC2436}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F7B55BC-5F52-47BD-809A-4EF2EADC2436}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F7B55BC-5F52-47BD-809A-4EF2EADC2436}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C20CE5B7-958A-4113-AB85-62D68F26142C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C20CE5B7-958A-4113-AB85-62D68F26142C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C20CE5B7-958A-4113-AB85-62D68F26142C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C20CE5B7-958A-4113-AB85-62D68F26142C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB5BAFE4-0C0C-44CB-914B-4D6B82193A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB5BAFE4-0C0C-44CB-914B-4D6B82193A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB5BAFE4-0C0C-44CB-914B-4D6B82193A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB5BAFE4-0C0C-44CB-914B-4D6B82193A0E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57149543-9BCE-4516-83D4-352BABA0EF78}
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal
