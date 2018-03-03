@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helper.cs" />
     <Compile Include="Model\Database.cs" />
     <Compile Include="Model\Item.cs" />
     <Compile Include="Model\TestOrderedList .cs" />

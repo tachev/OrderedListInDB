@@ -11,11 +11,10 @@ namespace Geo.Data.Tests
 	public class Database : IDatabase<Item, string, string>
 	{
 		public const string LastId = "LAST";
-		public int SimulateDatabaseDelay = 20;
+		public int SimulateDatabaseDelay = 0;
 
 		ConcurrentDictionary<string, Item> store = new ConcurrentDictionary<string, Item>();
 
-		//This is just for testing, so we can quickly access it by value
 		ConcurrentDictionary<string, Item> valuesIndex = new ConcurrentDictionary<string, Item>();
 		ConcurrentDictionary<string, Item> nextIdIndex = new ConcurrentDictionary<string, Item>();
 

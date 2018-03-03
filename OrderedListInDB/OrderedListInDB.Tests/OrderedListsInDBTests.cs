@@ -18,17 +18,14 @@ namespace Geo.Data.Tests
 		public async Task ReindexItemsWorstCase()
 		{
 			var items = new TestOrderedListWorstCase();
-			await FillOrderedListAsync(items);
-			((Database)items.Database).SimulateDatabaseDelay = 0;
+			await Helper.FillOrderedListAsync(items);
 			await TestReindex(items);
 		}
-
-		
 
 		[TestMethod]
 		public async Task ReindexItems()
 		{
-			var items = await Program.CreateItems(30000);
+			var items = await Helper.CreateItems(30000);
 			await AssertOrderAsync(items, null);
 		}
 
@@ -67,7 +64,7 @@ namespace Geo.Data.Tests
 		{
 			//We are starting with 5 items with values 1,2,3,4,5
 			var items = new TestOrderedList();
-			await FillOrderedListAsync(items);
+			await Helper.FillOrderedListAsync(items);
 
 			await AssertOrderAsync(items, new[] { 1, 2, 3, 4, 5 });
 
@@ -98,7 +95,7 @@ namespace Geo.Data.Tests
 		{
 			//We are starting with 5 items with values 1,2,3,4,5
 			var items = new TestOrderedList();
-			await FillOrderedListAsync(items);
+			await Helper.FillOrderedListAsync(items);
 
 			await AssertOrderAsync(items, new[] { 1, 2, 3, 4, 5 });
 
@@ -114,21 +111,6 @@ namespace Geo.Data.Tests
 
 			await MoveItemBefore(items, "3", "1");
 			await AssertOrderAsync(items, new[] { 5, 2, 4, 3, 1 });
-		}
-
-		private async Task FillOrderedListAsync(TestOrderedList list)
-		{
-			for (int i = 1; i <= 5; i++)
-			{
-				var item = new Item
-				{
-					Id = Guid.NewGuid().ToString(),
-					Value = i.ToString(),
-					NextId = Database.LastId
-				};
-
-				await list.InsertAsync(item);
-			}
 		}
 
 		private async Task DeleteItemWithValueAsync(TestOrderedList items, string value)
